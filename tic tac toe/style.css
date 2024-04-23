@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url("image.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-emphasis-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #d07a7a;
+
+}
+
+h1 {
+    color: #333;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+#resetBtn {
+    background-color: rgb(127, 210, 112);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#continueBtn{
+    background-color: rgb(127, 210, 112);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* Add these styles to your existing style.css file */
+
+@keyframes celebration {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.winner-cell {
+    background-color: rgb(142, 221, 255);
+    color: #333;
+    font-weight: bold;
+    animation: celebration 0.5s ease-in-out infinite;
+}
+
